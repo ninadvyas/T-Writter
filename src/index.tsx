@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import TypewriterContextProvider from './providers/contextprovider';
 import Navbar from './components/navbar';
+import { Analytics } from '@vercel/analytics/react';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -14,6 +15,7 @@ root.render(
     <TypewriterContextProvider>
       <Navbar />
       <App />
+      <Analytics />
     </TypewriterContextProvider>
   </React.StrictMode>
 );
