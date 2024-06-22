@@ -32,18 +32,28 @@ export default function Typearea() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const handleDownload = () => {
+    const blob = new Blob([content], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.download = 'content.txt';
+    link.href = url;
+    link.click();
+    URL.revokeObjectURL(url);
+  };
+
   return (
     <div className="typeArea-textarea-wrapper p-10">
       {isTypearea &&
         <motion.textarea
           ref={textareaRef} 
           initial={{
-            opacity: 0 as number,
-            y: 120 as number
+            opacity: 0,
+            y: 120
           }}
           animate={{
-            opacity: 1 as number,
-            y: 0 as number
+            opacity: 1,
+            y: 0
           }}
           className="outline-none focus:outline-none text-lg font-medium bg-transparent w-full h-full resize-none"
           placeholder="Start typing..."
@@ -53,6 +63,20 @@ export default function Typearea() {
           value={content}
         />
       }
+      <motion.button
+        initial={{
+          opacity: 0,
+          y: 120
+        }}
+        animate={{
+          opacity: 1,
+          y: 0
+        }}
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
+        onClick={handleDownload}
+      >
+        Download
+      </motion.button>
     </div>
   );
 }
