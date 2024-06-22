@@ -1,7 +1,7 @@
 # T-Writer
 
 <p align="center">
-  <img src="./public/scweb.png" alt="T-Writer">
+  <img src="public/scweb.png" alt="T-Writer">
 </p>
 
 ## Live Demo
