@@ -1,11 +1,11 @@
 # T-Writer
 
 <p align="center">
-  <img src="" alt="T-Writer">
+  <img src="./public/scweb.png" alt="T-Writer">
 </p>
 
 ## Live Demo
-- [twriter.ninadvyas.tech](https://twriter.ninadvyas.tech) / [t-writer.netlify.app](https://t-writer.netlify.app)
+- [twriter.ninadvyas.tech](https://twriter.ninadvyas.tech) / [twriter.vercel.app](https://twriter.vercel.app)
 
 
 ## Overview
