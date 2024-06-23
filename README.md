@@ -22,7 +22,7 @@ T-Writer seeks to recreate the feel of typing on a classic typewriter using mode
 
 To get started with T-Writer, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/t-writer.git`
+1. Clone the repository: `git clone https://github.com/ninadvyas/T-Writter.git`
 2. Navigate to the project directory: `cd t-writer`
 3. Install dependencies: `npm install`
 4. Run the application: `npm start`
